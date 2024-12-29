@@ -8,6 +8,12 @@
 }
 
 :root {
+    color-scheme: light dark;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
     font-family: Nunito, Montserrat, system-ui, sans-serif;
 
     scroll-behavior: smooth;
@@ -29,4 +35,11 @@
 
 a {
     text-decoration: none
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
 }
