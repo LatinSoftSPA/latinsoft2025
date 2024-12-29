@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    position: relative;
+    cursor: pointer
+}
+
+@media screen and (max-width: 900px) {
+    nav>a {
+        display: none
+    }
+
+    .container {
+        display: block
+    }
+}
