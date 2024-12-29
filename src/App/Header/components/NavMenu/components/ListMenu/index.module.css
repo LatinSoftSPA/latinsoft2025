@@ -12,16 +12,6 @@
     list-style: none;
 }
 
-/* ul>a {
-    color: var(--color-font);
-    font-weight: 400;
-    text-decoration: none
-}
-
-ul>a:hover {
-    text-decoration: underline
-} */
-
 .container li {
     text-align: center;
     padding: 7px
@@ -46,8 +36,6 @@ ul>a:hover {
 
 
 @media screen and (max-width: 900px) {
-
-    /* TODO: remove */
     .liClientes {
         display: none
     }

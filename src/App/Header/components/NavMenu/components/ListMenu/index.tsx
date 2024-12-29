@@ -1,28 +1,33 @@
+import { data } from "./data";
+
 import style from "./index.module.css";
 
-const ListMenu = () => {
-  return (
-    <ul className={style.container}>
-      <li>
-        <a href="#">Inicio</a>
-      </li>
-      <li>
-        <a href="#nosotros">Conócenos</a>
-      </li>
-      <li>
-        <a href="#servicios">Servicios</a>
-      </li>
-      <li className={style.liClientes}>
-        <a href="#clientes">Clientes</a>
-      </li>
-      <li>
-        <a href="#productos">Productos</a>
-      </li>
-      <li>
-        <a href="#footer">Contáctenos</a>
-      </li>
-    </ul>
-  );
+interface Props {
+  show: boolean;
+  handleClick: () => void;
+}
+
+const ListMenu: React.FC<Props> = ({ show, handleClick }) => {
+  const getLi = () => {
+    return data.map((obj) => {
+      const { id, name, url, enabled } = obj;
+      if (!enabled) return null;
+
+      return (
+        <li key={id}>
+          <a href={url} onClick={handleClick}>
+            {name}
+          </a>
+        </li>
+      );
+    });
+  };
+
+  const propsUl = {
+    className: `${style.container} ${show ? style.show : ""}`,
+  };
+
+  return <ul {...propsUl}>{getLi()}</ul>;
 };
 
 export default ListMenu;
