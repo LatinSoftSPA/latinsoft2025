@@ -1,1 +1,3 @@
-# latinsoft2025
+# Landing Page
+
+> LatinSOFT 2025
