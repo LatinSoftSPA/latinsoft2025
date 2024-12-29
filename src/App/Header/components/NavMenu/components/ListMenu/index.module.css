@@ -1,0 +1,54 @@
+.container {
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 50px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #082f49;
+    border-radius: 5px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.4);
+    list-style: none;
+}
+
+/* ul>a {
+    color: var(--color-font);
+    font-weight: 400;
+    text-decoration: none
+}
+
+ul>a:hover {
+    text-decoration: underline
+} */
+
+.container li {
+    text-align: center;
+    padding: 7px
+}
+
+.container li a {
+    text-decoration: none;
+    color: var(--color-font);
+    font-weight: 500;
+    display: block;
+    padding: 15px 0
+}
+
+.container li a:hover {
+    background-color: #0369a1;
+    border-radius: 5px
+}
+
+.container.show {
+    display: block
+}
+
+
+@media screen and (max-width: 900px) {
+
+    /* TODO: remove */
+    .liClientes {
+        display: none
+    }
+}
