@@ -1,19 +1,19 @@
-import AboutUs from "./AboutUs";
-import Clients from "./Clients";
-import Prestations from "./Prestations";
-import Products from "./Products";
-import Comments from "./Comments";
+import AboutUs from "./components/AboutUs";
+import Clients from "./components/Clients";
+import Prestations from "./components/Prestations";
+import Products from "./components/Products";
+// import Comments from "./components/Comments";
 
 import "./index.css";
 
 const Main = () => {
   return (
     <main>
-      <AboutUs id="nosotros" />
+      <AboutUs id="conocenos" />
       <Prestations id="servicios" />
       <Clients id="clientes" />
       <Products id="productos" />
-      <Comments id="comentarios" />
+      {/* <Comments id="comentarios" /> */}
     </main>
   );
 };

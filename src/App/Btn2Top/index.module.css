@@ -3,40 +3,38 @@
 }
 
 .btnTop {
-    justify-content: center;
-    align-items: center;
     position: fixed;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    bottom: 15px;
-    right: 15px;
+    bottom: 30px;
+    right: 30px;
     width: 40px;
     height: 40px;
+    font-size: 24px;
+    color: white;
+    background-color: #0284c7;
     border: none;
     border-radius: 50%;
-    background-color: #0ea5e9;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
-    transition: opacity 0.3s, transform 0.3s;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.2s, transform 0.2s;
 }
 
 .btnTop:hover {
-    background-color: #0369a1;
     transform: scale(1.2);
+    background-color: #60a5fa;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 932px) {
     .btnTop {
-        font-size: 24px;
         bottom: 50px;
         right: 50px;
         width: 50px;
         height: 50px;
-        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.7);
     }
 
     .btnTop:hover {
         transform: scale(1.5);
-        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
     }
 }

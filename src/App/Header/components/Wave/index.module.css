@@ -5,3 +5,7 @@
     height: 100px;
     overflow: hidden;
 }
+
+.container svg path {
+    fill: var(--bg-primary);
+}

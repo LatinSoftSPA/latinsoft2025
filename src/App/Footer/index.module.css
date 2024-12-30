@@ -37,7 +37,7 @@
 }
 
 .titleFooter {
-    color: var(--bg-par);
+    color: var(--color-font);
     text-align: center;
     font-size: 1.2em;
     padding: 15px 0;
