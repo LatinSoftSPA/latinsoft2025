@@ -1,12 +1,6 @@
-interface Product {
-  id: number;
-  name: string;
-  img: { src: string; alt: string };
-  description: string;
-  url: string;
-}
+import { ProductProps } from "./interfaces";
 
-export const listProducts: Product[] = [
+export const listProducts: ProductProps[] = [
   {
     id: 1,
     name: "Login SacGES - Latinsoft SpA",

@@ -1,16 +1,9 @@
+import { ProductProps } from "../interfaces";
+
 import style from "./index.module.css";
 
-interface Props {
-  id: number;
-  name: string;
-  img: { src: string; alt: string };
-  description: string;
-  url: string;
-}
-
-const Product: React.FC<Props> = (props) => {
+const Product: React.FC<ProductProps> = (props) => {
   const { img } = props;
-  //const { id, name, img, description, url } = props;
 
   return (
     <div className={style.container}>
