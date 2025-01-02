@@ -8,7 +8,7 @@ export const data = [
   {
     id: 2,
     name: "Conócenos",
-    url: "#nosotros",
+    url: "#conocenos",
     enabled: true,
   },
   {
@@ -31,6 +31,12 @@ export const data = [
   },
   {
     id: 6,
+    name: "Comentarios",
+    url: "#footer",
+    enabled: false,
+  },
+  {
+    id: 7,
     name: "Contáctenos",
     url: "#footer",
     enabled: true,

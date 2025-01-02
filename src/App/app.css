@@ -9,18 +9,24 @@
 
 :root {
     color-scheme: light dark;
+    font-family: Nunito, Montserrat, system-ui, sans-serif;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    font-family: Nunito, Montserrat, system-ui, sans-serif;
 
     scroll-behavior: smooth;
     scrollbar-width: none;
+
     --bg-header: 45deg, rgba(46, 110, 187, 0.7), rgba(185, 48, 48, 0.7);
     --img-header: url("../../public/img/portada.jpg");
+    --header: -webkit-linear-gradient(var(--bg-header)), var(--img-header);
     --header: linear-gradient(var(--bg-header)), var(--img-header);
+
+    --bg-primary: #f1f5f9;
+    --bg-secondary: #1a202c;
+
     --bg-par: #e2e8f0;
     --color-font: #fff;
     --color-shadow-font: 0px 20px 20px #000000;
@@ -29,17 +35,27 @@
     --box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* body {
-    overflow: hidden;
-} */
+body {
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+}
 
 a {
     text-decoration: none
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
-        color: #213547;
-        background-color: #ffffff;
+        --bg-primary: #1f2937;
+        --bg-secondary: #f1f5f9;
+
+        --bg-par: #1a202c;
+        --color-font: #e2e8f0;
+        --primary-color: #6ee7b7;
+        --secondary-color: #34d399;
     }
 }
