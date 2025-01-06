@@ -32,7 +32,7 @@ export const data = {
     },
     {
       name: "Web Mail",
-      url: "https://webmail.latinsoft.cl",
+      url: "https://webmail.latinsoft.cl:5443/webmail",
       enabled: true,
     },
   ],
