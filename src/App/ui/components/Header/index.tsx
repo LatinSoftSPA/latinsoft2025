@@ -1,6 +1,6 @@
-import NavMenu from "./components/NavMenu";
-import TitleSetion from "./components/TitleSetion";
-import Wave from "./components/Wave";
+import NavMenu from "../../widgets/NavMenu";
+import TitleSetion from "../../widgets/TitleSetion";
+import Waves from "../../widgets/Waves";
 
 import "./index.css";
 
@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <NavMenu />
       <TitleSetion />
-      <Wave />
+      <Waves />
     </header>
   );
 };

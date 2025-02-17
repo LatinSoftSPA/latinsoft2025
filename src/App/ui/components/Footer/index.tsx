@@ -1,5 +1,5 @@
-import Sites from "./components/Sites";
-import Mails from "./components/Mails";
+import Sites from "../../components/Sites";
+import Mails from "../../components/Mails";
 
 import { data } from "./data";
 import style from "./index.module.css";
