@@ -3,8 +3,4 @@
 > LatinSOFT 2025
 
 
-# Mi Proyecto
-
-![Build Status](https://github.com/LatinSoftSPA/latinsoft2025/actions/workflows/main.yml/badge.svg)
-
-Este es un proyecto de ejemplo con GitHub Actions configurado.
+[![CI for React (Vite)](https://github.com/LatinSoftSPA/latinsoft2025/actions/workflows/webpack.yml/badge.svg?branch=main&event=pull_request)](https://github.com/LatinSoftSPA/latinsoft2025/actions/workflows/webpack.yml)
