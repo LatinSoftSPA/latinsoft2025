@@ -1,6 +1,6 @@
 import { useState } from "react";
-import IconMenu from "./components/IconMenu";
-import ListMenu from "./components/ListMenu";
+import IconMenu from "../IconMenu";
+import ListMenu from "../ListMenu";
 
 import style from "./index.module.css";
 

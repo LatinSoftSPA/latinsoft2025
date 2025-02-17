@@ -1,8 +1,8 @@
-import AboutUs from "./components/AboutUs";
-import Clients from "./components/Clients";
-import Prestations from "./components/Prestations";
-import Products from "./components/Products";
-// import Comments from "./components/Comments";
+import AboutUs from "../../features/AboutUs";
+import Clients from "../../features/Clients";
+import Prestations from "../../features/Prestations";
+import Products from "../../features/Products";
+// import Comments from "../../features/Comments";
 
 import "./index.css";
 
