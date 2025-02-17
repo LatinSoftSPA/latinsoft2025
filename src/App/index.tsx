@@ -1,7 +1,7 @@
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-import Btn2Top from "./Btn2Top";
+import Header from "./ui/components/Header";
+import Footer from "./ui/components/Footer";
+import Btn2Top from "./ui/widgets/Btn2Top";
+import Main from "./ui/pages/Main";
 
 import "./app.css";
 

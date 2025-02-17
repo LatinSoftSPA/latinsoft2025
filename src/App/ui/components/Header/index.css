@@ -4,13 +4,11 @@ header {
     background: var(--header);
     background-size: cover;
     background-attachment: scroll;
-    position: relative
+    position: relative;
 }
-
 
 @media screen and (max-width: 900px) {
     header {
         background-position: center
     }
-
 }
