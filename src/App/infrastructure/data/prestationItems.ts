@@ -1,6 +1,4 @@
-import { PrestationProps } from "./interfaces";
-
-export const listPrestations: PrestationProps[] = [
+export const data = [
   {
     id: 1,
     name: "GesTRA",

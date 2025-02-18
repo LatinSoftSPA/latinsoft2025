@@ -26,18 +26,17 @@
 
 .wave1 {
     animation: waveAnimation 12s infinite;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .wave2 {
-    animation: waveAnimationReverse 6s infinite;
+    animation: waveAnimation 4s infinite;
     opacity: 1;
 }
 
 .wave3 {
-    animation: waveAnimation 4s infinite;
-    opacity: 0.6;
-    z-index: 1;
+    animation: waveAnimationReverse 6s infinite;
+    opacity: 0.5;
 }
 
 
