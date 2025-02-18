@@ -1,4 +1,4 @@
-export interface PrestationProps {
+export interface Prestation {
   id: number;
   name: string;
   img: string;

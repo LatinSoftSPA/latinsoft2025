@@ -8,7 +8,7 @@
 
 .container section {
     padding: 0 10px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .title {
@@ -26,9 +26,55 @@
     gap: 20px;
 }
 
+.prestation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.prestationImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.prestation img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.prestation h3 {
+    color: var(--secondary-color);
+    margin: 10px 0;
+    font-size: 18px;
+    min-height: 2rem;
+}
+
+.prestation p {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 @media screen and (min-width: 600px) {
     .title {
         font-size: 28px;
+    }
+
+    .prestation h3 {
+        font-size: 20px;
+    }
+
+    .prestation p {
+        font-size: 16px;
     }
 }
 
@@ -37,12 +83,25 @@
         max-width: 1200px;
     }
 
-    .title {
-        font-size: 2rem;
-    }
-
     .prestations {
         flex-direction: row;
         padding-bottom: 80px;
+    }
+
+    .prestation {
+        max-width: 450px;
+        gap: 15px;
+    }
+
+    .prestationImage {
+        width: 90%;
+    }
+
+    .prestation h3 {
+        font-size: 1.5rem;
+    }
+
+    .prestation p {
+        font-size: 1.1rem;
     }
 }

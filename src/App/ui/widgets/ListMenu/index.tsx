@@ -1,5 +1,4 @@
-import { data } from "./data";
-
+import { useMenuItems } from "../../../infrastructure/hooks/useMenuItems";
 import style from "./index.module.css";
 
 interface Props {
@@ -8,26 +7,26 @@ interface Props {
 }
 
 const ListMenu: React.FC<Props> = ({ show, handleClick }) => {
-  const getLi = () => {
-    return data.map((obj) => {
-      const { id, name, url, enabled } = obj;
-      if (!enabled) return null;
-
-      return (
-        <li key={id}>
-          <a href={url} onClick={handleClick}>
-            {name}
-          </a>
-        </li>
-      );
-    });
-  };
+  const items = useMenuItems();
 
   const propsUl = {
     className: `${style.container} ${show ? style.show : ""}`,
   };
 
-  return <ul {...propsUl}>{getLi()}</ul>;
+  return (
+    <ul {...propsUl}>
+      {items.map((obj) => {
+        const { id, name, url } = obj;
+        return (
+          <li key={id}>
+            <a href={url} onClick={handleClick}>
+              {name}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
 };
 
 export default ListMenu;
