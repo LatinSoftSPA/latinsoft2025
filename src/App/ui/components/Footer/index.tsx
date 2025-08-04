@@ -14,6 +14,7 @@ const Footer = () => {
           </div>
           <div className={style.menuFooter}>
             <h4>Teléfono</h4>
+            <p>+56-9-88899044</p>
             <p>+56-9-82431722</p>
           </div>
           <div className={style.menuFooter}>
